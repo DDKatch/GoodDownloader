@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="560.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#16abdb" height="70.0" layoutX="6.0" layoutY="8.0" opacity="0.22" stroke="BLACK" strokeType="INSIDE" width="545.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="5.0" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" " wrappingWidth="380.4" AnchorPane.leftAnchor="140.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="10.0">
+         <font>
+            <Font name="NanumGothic" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="140.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" " wrappingWidth="380.4" AnchorPane.leftAnchor="140.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="35.0">
+         <font>
+            <Font name="NanumGothic" size="13.0" />
+         </font>
+      </Text>
+      <ProgressIndicator layoutX="10.0" layoutY="10.0" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" prefHeight="50.0" prefWidth="50.0" progress="0.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" />
+      <ToggleButton contentDisplay="CENTER" graphicTextGap="0.0" layoutX="57.0" layoutY="11.0" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" scaleShape="false" stylesheets="@play.css" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="70.0" AnchorPane.topAnchor="10.0">
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" smooth="false">
+               <image>
+                  <Image url="@pause.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+         </graphic>
+      </ToggleButton>
+      <ImageView disable="true" fitHeight="70.0" fitWidth="67.0" layoutX="37.0" layoutY="7.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" visible="false">
+         <viewport>
+            <Rectangle2D />
+         </viewport>
+         <effect>
+            <Lighting bumpInput="$null" diffuseConstant="0.95" specularConstant="2.0" specularExponent="14.77" surfaceScale="0.0">
+               <light>
+                  <Light.Distant color="#ff8383" />
+               </light>
+            </Lighting>
+         </effect>
+         <image>
+            <Image url="@exe.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

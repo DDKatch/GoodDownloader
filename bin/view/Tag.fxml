@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="47.0" prefWidth="181.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ToggleButton alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="5.0" layoutY="5.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="156.0" stylesheets="@tags.css" text=" " AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="5.0">
+         <graphic>
+            <TextField disable="true" editable="false" prefHeight="25.0" prefWidth="25.0" />
+         </graphic>
+      </ToggleButton>
+   </children>
+</AnchorPane>

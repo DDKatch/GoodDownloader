@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.net.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="460.0" prefWidth="760.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <BorderPane prefHeight="479.0" prefWidth="826.0" BorderPane.alignment="CENTER">
+         <center>
+            <HBox prefHeight="460.0" prefWidth="757.0" BorderPane.alignment="CENTER">
+               <children>
+                  <BorderPane prefHeight="479.0" prefWidth="643.0">
+                     <center>
+                        <AnchorPane maxHeight="500.0" maxWidth="737.0" minHeight="395.0" minWidth="500.0" prefHeight="395.0" prefWidth="598.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <VBox fillWidth="false" layoutX="190.0" layoutY="61.0" maxHeight="500.0" maxWidth="500.0" minHeight="500.0" minWidth="500.0" prefHeight="500.0" prefWidth="500.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <AnchorPane prefHeight="96.0" prefWidth="592.0">
+                                       <children>
+                                          <Button layoutX="418.0" layoutY="23.0" maxHeight="60.0" maxWidth="146.0" minHeight="45.0" minWidth="70.0" mnemonicParsing="false" onAction="#addURL" prefHeight="53.0" prefWidth="79.0" text="ADD" textAlignment="CENTER" AnchorPane.bottomAnchor="21.0" AnchorPane.rightAnchor="61.0" AnchorPane.topAnchor="23.0">
+                                             <font>
+                                                <Font name="NanumGothic" size="18.0" />
+                                             </font>
+                                          </Button>
+                                          <TextField fx:id="urlField" layoutX="32.0" layoutY="21.0" prefHeight="48.0" prefWidth="366.0" promptText="URL" text="http://pesni-tut.net/songdl97942.mp3" AnchorPane.bottomAnchor="21.0" AnchorPane.topAnchor="23.0" />
+                                       </children>
+                                    </AnchorPane>
+                                    <ScrollPane focusTraversable="false" hbarPolicy="NEVER" prefHeight="300.0" prefWidth="575.0">
+                                       <content>
+                                          <AnchorPane focusTraversable="true" prefHeight="292.0" prefWidth="561.0">
+                                             <children>
+                                                <VBox fx:id="downloads_VB" prefHeight="290.0" prefWidth="292.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                             </children></AnchorPane>
+                                       </content>
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                    </ScrollPane>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                     </center>
+                     <bottom>
+                        <ToolBar maxHeight="45.0" minWidth="30.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="45.0" prefWidth="563.0" BorderPane.alignment="CENTER">
+                           <items>
+                              <AnchorPane prefHeight="33.0" prefWidth="383.0" />
+                              <ToggleButton fx:id="pausedDs_TB" mnemonicParsing="false" prefHeight="25.0" prefWidth="71.0" selected="true" text="paused" />
+                              <ToggleButton fx:id="allDs_TB" mnemonicParsing="false" prefHeight="25.0" prefWidth="66.0" stylesheets="@../application/application.css" text="all" />
+                           </items>
+                        </ToolBar>
+                     </bottom>
+                     <top>
+                        <ToolBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+                     </top>
+                  </BorderPane>
+                  <BorderPane prefHeight="479.0" prefWidth="278.0">
+                     <top>
+                        <ToolBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+                     </top>
+                     <bottom>
+                        <ToolBar nodeOrientation="LEFT_TO_RIGHT" prefHeight="44.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                           <items>
+                              <AnchorPane maxHeight="30.0" minHeight="30.0" prefHeight="30.0" prefWidth="183.0">
+                                 <children>
+                                    <ImageView fx:id="seeFolder_IV" fitHeight="40.0" fitWidth="40.0" layoutX="10.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-5.0" AnchorPane.topAnchor="-5.0">
+                                       <image>
+                                          <Image url="@../../../../../../opt/JavaFXSceneBuilder2.0/app/fxml-48.png" />
+                                       </image></ImageView>
+                                    <ImageView fx:id="trash_IV" fitHeight="40.0" fitWidth="40.0" layoutX="67.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-5.0" AnchorPane.topAnchor="-5.0">
+                                       <image>
+                                          <Image url="@../../../../../../opt/JavaFXSceneBuilder2.0/app/fxml-48.png" />
+                                       </image></ImageView>
+                                    <ImageView fx:id="addTag_IV" fitHeight="40.0" fitWidth="40.0" layoutX="120.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-5.0" AnchorPane.topAnchor="-5.0">
+                                       <image>
+                                          <Image url="@../../../../../../opt/JavaFXSceneBuilder2.0/app/fxml-48.png" />
+                                       </image></ImageView>
+                                 </children>
+                              </AnchorPane>
+                           </items>
+                        </ToolBar>
+                     </bottom>
+                     <center>
+                        <ScrollPane hbarPolicy="NEVER" prefHeight="395.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="392.0" prefWidth="195.0">
+                                 <children>
+                                    <VBox fx:id="tags_VB" prefHeight="393.0" prefWidth="195.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </ScrollPane>
+                     </center>
+                  </BorderPane>
+               </children>
+            </HBox>
+         </center>
+      </BorderPane>
+   </center>
+</BorderPane>

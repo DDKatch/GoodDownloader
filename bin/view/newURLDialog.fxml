@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane prefHeight="232.0" prefWidth="363.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField layoutX="19.0" layoutY="21.0" prefHeight="35.0" prefWidth="324.0" promptText="URL" />
+      <TextField layoutX="155.0" layoutY="122.0" prefHeight="35.0" prefWidth="189.0" promptText="new name" />
+      <Button layoutX="270.0" layoutY="177.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="73.0" text="Ok" />
+      <Button layoutX="191.0" layoutY="178.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="69.0" text="Cancel" />
+      <ChoiceBox layoutX="216.0" layoutY="72.0" prefHeight="35.0" prefWidth="128.0" />
+      <Text layoutX="19.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select tag:" wrappingWidth="154.24365234375">
+         <font>
+            <Font name="NanumGothic" size="27.0" />
+         </font>
+      </Text>
+      <Text layoutX="22.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rename:" wrappingWidth="154.24365234375">
+         <font>
+            <Font name="NanumGothic" size="27.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

@@ -1,0 +1,4 @@
+.toggle-button {
+	 -fx-shape: "M 8,0 L 8,4 2,4 0,2 2,0 8,0 Z";
+     -fx-base: skyblue;
+}

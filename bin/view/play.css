@@ -1,0 +1,7 @@
+.toggle-button {
+    -fx-shape: "M 50,30  m 0,25  a 1,1 0 0,0 0,-50  a 1,1 0 1,0 0,50";
+}
+
+.button{
+	-fx-background-color: transparent;
+}
