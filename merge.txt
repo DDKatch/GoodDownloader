@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 DOUBLE CHIIIII!!!
+=======
+CHIIIIIIII!!! 
+>>>>>>> temp1
