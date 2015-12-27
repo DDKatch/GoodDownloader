@@ -1,15 +1,5 @@
 package application;
 
-import view.InputRootController;
-import view.ViewController;
-
-import java.io.IOException;
-import java.util.ArrayList;
-
-import models.Download;
-import models.Manager;
-import models.RootPath;
-import models.XMLParser;
 import javafx.application.Application;
 import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
@@ -18,6 +8,15 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
+import models.Download;
+import models.Manager;
+import models.RootPath;
+import models.XMLParser;
+import view.InputRootController;
+import view.ViewController;
+
+import java.io.IOException;
+import java.util.ArrayList;
 
 public class Main extends Application implements XMLParser{
 
@@ -35,6 +34,7 @@ public class Main extends Application implements XMLParser{
 		if(rootPath.getPath().isEmpty())
 		{			
 			showInputRootDialog();
+            manager = new Manager(rootPath.getPath());
 		}
 		else
 			showDownloader();

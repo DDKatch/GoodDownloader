@@ -1,12 +1,13 @@
 package models;
 
-import java.io.*;
-import java.net.*;
-import java.text.NumberFormat;
-import java.util.Observable;
-
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
+import java.io.InputStream;
+import java.io.RandomAccessFile;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.text.NumberFormat;
+import java.util.Observable;
 
 // This class downloads a file from a URL.
 @XmlType(propOrder = {"DOWNLOADING",

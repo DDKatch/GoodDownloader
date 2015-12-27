@@ -1,13 +1,5 @@
 package view;
 
-import java.awt.Desktop;
-import java.io.File;
-import java.io.IOException;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.util.Observable;
-import java.util.Observer;
-
 import javafx.concurrent.Task;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.ProgressIndicator;
@@ -18,6 +10,14 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Text;
 import models.Download;
+
+import java.awt.*;
+import java.io.File;
+import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.Observable;
+import java.util.Observer;
 
 public class DownloadController extends Observable implements Observer, ImageButton
 {
