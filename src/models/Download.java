@@ -48,7 +48,7 @@ public class Download extends Observable implements Runnable {
 	
 	public Download(){
 		status = NEWLYCREATED;	
-	};
+	}
 	
 	public Download(URL url, String folderPath, String fileName ){ 
 		this.url = url;
@@ -292,15 +292,19 @@ public class Download extends Observable implements Runnable {
 	        if (file != null) {
 	            try {
 	                file.close();
-	            } catch (Exception e) {}
+	            } catch (Exception e) {
+                    System.out.print(e.toString());
+                }
 	        }
 	        
 	        // Close connection to server.
 	        if (stream != null) {
-	            try {
-	                stream.close();
-	            } catch (Exception e) {}
-	        }
+                try {
+                    stream.close();
+                } catch (Exception e){
+                    System.out.print(e.toString());
+                }
+            }
 	        
 	        // if was pause need save time 
 	        time = current_time;
@@ -451,8 +455,9 @@ public class Download extends Observable implements Runnable {
 	}
 	
 	public boolean isPaused(){
+        boolean result = false;
 		if (status == PAUSED)
-			return true;
-		return false;
+            result = true;
+        return result;
 	}
 }

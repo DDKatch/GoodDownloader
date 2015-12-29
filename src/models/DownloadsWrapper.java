@@ -1,11 +1,9 @@
 package models;
 
-import java.util.ArrayList;
-
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElementWrapper;
 import javax.xml.bind.annotation.XmlType;
-
+import java.util.ArrayList;
 
 @XmlType(propOrder = {"downloads"})
 public class DownloadsWrapper {
@@ -13,7 +11,7 @@ public class DownloadsWrapper {
 	private ArrayList<Download> downloads;
 	
 	public DownloadsWrapper(){
-		downloads =  new ArrayList<Download>();
+		downloads =  new ArrayList<>();
 	}
 	
 	public DownloadsWrapper(ArrayList<Download> downloads){
